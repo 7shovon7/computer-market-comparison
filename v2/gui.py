@@ -3,6 +3,8 @@ from bs4 import BeautifulSoup
 import csv
 import os
 from datetime import datetime
+import threading
+from tkinter import *
 
 
 def generate_file_name(file_name, file_ext):
@@ -115,4 +117,9 @@ def main():
     print(f'\nYour data is ready. Please check the {output_file} file.')
 
 
-main()
+root = Tk()
+
+root.title('Make Computer Market Research')
+root.geometry('500x300')
+
+root.mainloop()
